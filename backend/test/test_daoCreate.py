@@ -103,13 +103,3 @@ def test_daoCreate_noData(sut, no_data):
     with pytest.raises(Exception):
         sut.create(no_data)
 
-"""
-Suggested test cases:
-    - Successful Insert
-        - Parameterize: 'collection_name, collection_data'
-        - Collection data would be huge if you throw it straight in, 
-          consider defining variables for each dictionary and pass them in
-    - Failed insert (garbage data)
-    - Failed insert (empty data)
-    - Reapeat insert failure (unique constraint)
-"""
